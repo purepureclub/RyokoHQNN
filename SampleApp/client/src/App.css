@@ -1,0 +1,82 @@
+.app {
+  text-align: center;
+}
+
+.canvas {
+  width: calc(100vmin - 180px);
+  height: calc(100vmin - 180px);
+  margin: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+
+.text {
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.classify-button {
+  margin: 1rem 0.5rem;
+}
+
+.job-message {
+  margin-top: calc((100vmin / 2) + 4rem);
+}
+
+.ryoko-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255,0.6);
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+}
+
+.spinner {
+  top: calc(50% - 1.5rem);
+  left: calc(50% - 1.5rem);
+  position: absolute;
+}
+
+.buttons-small {
+  display: none;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+@media screen and (orientation: portrait) {
+  .canvas {
+    width: 100vmin;
+    height: 100vmin;
+    margin: auto;
+  }
+
+  .classify-button {
+    margin: 1rem auto auto auto;
+    width: 100% !important;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-height: 720px) {
+  .classify-button {
+    display: none !important;
+  }
+
+  .buttons-small {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .buttons-small > button {
+    flex-grow: 1;
+  }
+}

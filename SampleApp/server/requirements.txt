@@ -1,0 +1,13 @@
+aiofiles==0.6.0
+celery==4.4.7
+fastapi==0.64.0
+flower==0.9.7
+redis==3.5.3
+requests==2.25.1
+uvicorn==0.13.4
+Pillow
+qiskit
+numpy
+qiskit_machine_learning
+torch
+torchvision
